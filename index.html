@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Love — Short Essays</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#fff8fb;
+      --card:#ffffff;
+      --muted:#6b6b7a;
+      --accent:#e76fa3;
+      --accent-2:#6b8cff;
+      --radius:16px;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, var(--bg) 0%, #c95aab 70%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      color:#1f1f2e;
+      line-height:1.6;
+      padding:40px 18px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container {
+      max-width:920px;
+      width:100%;
+    }
+
+    header {
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:28px;
+    }
+
+    .logo {
+      width:70px; height:70px; border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex; align-items:center; justify-content:center;
+      color:white; font-weight:700;
+      font-family:'Playfair Display', serif;
+      font-size:28px;
+      box-shadow:0 8px 24px rgba(107,111,140,0.12);
+    }
+
+    .site-title h1 {
+      margin:0;
+      font-family:'Playfair Display', serif;
+      font-size:20px;
+      letter-spacing:0.2px;
+    }
+
+    .site-title p {
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, rgba(231,111,163,0.06), rgba(107,140,255,0.03));
+      padding:28px;
+      border-radius:var(--radius);
+      box-shadow:0 6px 20px rgba(33,33,50,0.06);
+      margin-bottom:20px;
+      display:flex;
+      gap:20px;
+      align-items:center;
+    }
+
+    .hero h2 {
+      margin:0;
+      font-family:'Playfair Display', serif;
+      font-size:28px;
+    }
+
+    .hero p {
+      margin-top:8px;
+      color:var(--muted);
+    }
+
+    main {
+      display:grid;
+      gap:18px;
+      grid-template-columns:1fr;
+    }
+
+    .card {
+      background:var(--card);
+      padding:20px;
+      border-radius:12px;
+      border:1px solid rgba(31,31,46,0.04);
+      box-shadow:0 8px 18px rgba(31,31,46,0.04);
+    }
+
+    .card h3 {
+      margin-top:0;
+      font-family:'Playfair Display', serif;
+      font-size:18px;
+      color:#222;
+    }
+
+    .card p {
+      margin:10px 0;
+      color:#333;
+    }
+
+    .footer {
+      margin-top:20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    @media (max-width:600px) {
+      .hero { padding:18px; }
+      .logo { width:56px; height:56px; font-size:22px; }
+      .hero h2 { font-size:20px; }
+      body { padding:20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">L</div>
+      <div class="site-title">
+        <h1>Love — Short Essays</h1>
+        <p>Thoughts, moments, and tiny stories about the heart.</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="left">
+        <h2>The gentle language of love</h2>
+        <p>Short essays and reflections about love — its quiet power and timeless beauty.</p>
+      </div>
+    </section>
+
+    <main>
+      <article class="card">
+        <h3>The Essence of Love</h3>
+        <p>Love is not just a feeling; it’s a language of the soul. It speaks through silence, through little acts of care, and through the warmth of a shared smile. True love doesn’t need perfection — it needs understanding, patience, and trust. When two hearts connect beyond words, that’s when love turns into something timeless.</p>
+      </article>
+
+      <article class="card">
+        <h3>When You Fall in Love</h3>
+        <p>Falling in love is like watching the sunrise for the first time — soft, slow, and breathtakingly beautiful. You don’t plan it, it just happens. One day, someone walks into your life and changes the way you see everything. Love teaches you to feel deeply, to give freely, and to believe in the magic of “us.”</p>
+      </article>
+
+      <article class="card">
+        <h3>Love Beyond Words</h3>
+        <p>Sometimes love doesn’t need to be spoken. It’s in the way you look at someone, in the comfort of their presence, or in the quiet moments when you simply exist together. Real love doesn’t demand attention — it just grows silently, making life feel a little more beautiful each day.</p>
+      </article>
+
+      <article class="card">
+        <h3>The Power of Pure Love</h3>
+        <p>Love has the power to heal, to inspire, and to transform. It teaches us kindness, forgiveness, and the beauty of giving without expecting anything in return. Even when life gets difficult, love reminds us that there’s always light — even in the darkest times.</p>
+      </article>
+
+      <div class="footer">
+        <div>© <span id="year"></span> Love Essays</div>
+        <div>Written with care • Read with heart</div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
